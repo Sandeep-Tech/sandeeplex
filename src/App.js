@@ -10,7 +10,20 @@ import ContentWall from "./components/ContentWall/ContentWall";
 import ContentSection from "./components/common/ContentSection/ContentSection";
 
 // Assets
-// import images here
+// import LandscapePlaceholder from "./assets/generic/landscape-block.png";
+
+// dummy data creation
+const LandscapePlaceholderArray = [];
+for (let i = 0; i < 5; i++) LandscapePlaceholderArray.push("img");
+
+const contentSectionSubHeadings = [
+  "Series",
+  "Non Fiction",
+  "Exclusives",
+  "Musicals",
+  "Shorts",
+  "Lyricals",
+];
 
 function App() {
   return (
@@ -18,7 +31,11 @@ function App() {
       <Header />
       <PromotedContent />
       <ContentWall />
-      <ContentSection />
+      <ContentSection
+        images={LandscapePlaceholderArray}
+        heading="originals"
+        subheadings={contentSectionSubHeadings}
+      />
     </div>
   );
 }
