@@ -15,11 +15,9 @@ import BillBoard from "./components/common/BillBoard/BillBoard";
 import BillBoardImageSource from "./assets/billboard/gemplex-billboard.jpg";
 
 // DUMMY DATA CREATION
-// Originals - horizontal content section dummy data creation.
-const LandscapePlaceholderArray = [];
-for (let i = 0; i < 5; i++) LandscapePlaceholderArray.push("img");
 
-const contentSectionSubHeadings = [
+// ORIGINALS - horizontal content section dummy data creation.
+const originalsContentSectionSubHeadings = [
   "Series",
   "Non Fiction",
   "Exclusives",
@@ -28,17 +26,36 @@ const contentSectionSubHeadings = [
   "Lyricals",
 ];
 
+// MOVIES - horizontal content section dummy data creation.
+const moviesContentSectionSubHeadings = ["Original Web Film", "Premium Shorts"];
+
+// common to ORIGINALS and MOVIES
+const LandscapePlaceholderArray = [];
+for (let i = 0; i < 5; i++) LandscapePlaceholderArray.push("img");
+
 function App() {
   return (
     <div className="App">
       <Header />
+
       <PromotedContent />
+
       <ContentWall />
+
       <ContentSection
         images={LandscapePlaceholderArray}
-        heading="originals"
-        subheadings={contentSectionSubHeadings}
+        heading="ORIGINALS"
+        subheadings={originalsContentSectionSubHeadings}
       />
+
+      <BillBoard imgSrc={BillBoardImageSource} />
+
+      <ContentSection
+        images={LandscapePlaceholderArray}
+        heading="MOVIES"
+        subheadings={moviesContentSectionSubHeadings}
+      />
+
       <BillBoard imgSrc={BillBoardImageSource} />
     </div>
   );
