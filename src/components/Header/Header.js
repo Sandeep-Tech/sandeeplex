@@ -8,11 +8,12 @@ const Header = () => (
 
     {/*content type list*/}
     <div>
-      <a>Originals</a>
-      <a>Movies</a>
-      <a>Videos</a>
-      <a>Music</a>
-      <a>Hype</a>
+      <a href="">Originals</a>
+      <a href="">Movies</a>
+      <a href="">Videos</a>
+      <a href="">Music</a>
+      <a href="">Hype</a>
+      <input type="text" />
     </div>
 
     {/*theme selector*/}
