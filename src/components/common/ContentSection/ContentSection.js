@@ -11,7 +11,7 @@ const ContentSection = (props) => (
         <div>
           <span>{subheading}</span>
           <ContentSlider
-            images={props.images}
+            contents={props.images}
             height={50}
             width={100}
             totalSlides={6}

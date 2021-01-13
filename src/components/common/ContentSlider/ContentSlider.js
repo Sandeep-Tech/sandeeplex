@@ -20,10 +20,12 @@ const ContentSlider = (props) => (
       visibleSlides={props.visibleSlides}
     >
       <Slider>
-        {props.images.map((image, index) => {
+        {props.contents.map((content, index) => {
           return (
             <Slide className={style.contentTile}>
-              <div />
+              {
+                content
+              }
             </Slide>
           );
         })}

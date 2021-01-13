@@ -12,6 +12,7 @@ import BillBoard from "./components/common/BillBoard/BillBoard";
 
 // Assets
 // import LandscapePlaceholder from "./assets/generic/landscape-block.png";
+import LandscapePlaceholder from "./assets/content-wall/1.jpg";
 import BillBoardImageSource from "./assets/billboard/gemplex-billboard.jpg";
 
 // DUMMY DATA CREATION
@@ -31,7 +32,8 @@ const moviesContentSectionSubHeadings = ["Original Web Film", "Premium Shorts"];
 
 // common to ORIGINALS and MOVIES
 const LandscapePlaceholderArray = [];
-for (let i = 0; i < 5; i++) LandscapePlaceholderArray.push("img");
+for (let i = 0; i < 5; i++)
+  LandscapePlaceholderArray.push(<img src={LandscapePlaceholder} />);
 
 function App() {
   return (
