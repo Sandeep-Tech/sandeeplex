@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tile {
+  position: relative;
+}
+
+.details {
+  z-index: 2;
+  position: relative;
+  /* bottom: 4; */
+}
+
+.image {
+  /* position: relative; */
+  height: 100%;
+  width: 100%;
+}
