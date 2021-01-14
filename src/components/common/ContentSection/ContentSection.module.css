@@ -1,0 +1,15 @@
+.mainContainer {
+  margin: 0 2vw;
+}
+
+.heading {
+  font-size: 2vh;
+  font-weight: 500;
+  margin: 2vh 0;
+  color: #04396b;
+}
+.subheading {
+  font-size: 1.5vh;
+  font-weight: 500;
+  color: #0070cc;
+}

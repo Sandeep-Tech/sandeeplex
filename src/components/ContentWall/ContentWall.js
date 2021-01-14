@@ -18,7 +18,7 @@ const ContentWall = () => (
     {images.map((image, index) => {
       return (
         <div key={index} className={style.tile}>
-          <img alt={`image ${index + 1}`} src={image} className={style.image}/>
+          <img alt={`image ${index + 1}`} src={image} className={style.image} />
 
           <div className={style.details}>
             <span>name </span>

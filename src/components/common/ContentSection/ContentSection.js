@@ -4,11 +4,11 @@ import ContentSlider from "../ContentSlider/ContentSlider";
 
 const ContentSection = (props) => (
   <div className={style.mainContainer}>
-    <span>{props.heading}</span>
+    <span className={style.heading}>{props.heading}</span>
 
     <div>
       {props.subheadings.map((subheading, index) => (
-        <div key={index}>
+        <div key={index} className={style.subheading}>
           <span>{subheading}</span>
           <ContentSlider
             contents={props.images}

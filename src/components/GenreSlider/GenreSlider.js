@@ -7,21 +7,24 @@ import genreBoardSource from "../../assets/genre-slider/genre-picture.jpg";
 const genreBoardElementArray = [];
 for (let i = 0; i < 6; i++)
   genreBoardElementArray.push(
-    <img src={genreBoardSource} alt={`image ${i}`} />
+    <img
+      className={style.genreBoard}
+      src={genreBoardSource}
+      alt={`image ${i}`}
+    />
   );
 
-const GenreSlider = (props) => {
+const GenreSlider = () => {
   return (
-    <div>
-      <span>GENRE</span>
+    <div className={style.mainContainer}>
+      <span className={style.heading}>GENRE</span>
       <ContentSlider
-        width={100}
-        height={50}
-        totalSlides={8}
-        visibleSlides={8}
+        width={50}
+        height={20}
+        totalSlides={6}
+        visibleSlides={3}
         contents={genreBoardElementArray}
       />
-      
     </div>
   );
 };

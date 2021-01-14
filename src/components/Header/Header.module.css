@@ -1,17 +1,21 @@
 .headerContainer {
   display: flex;
   justify-content: center;
-  /* border: 2px red solid; */
   height: 6vh;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: white;
 }
 
 .centerAllItems {
   display: flex;
   padding: 1vh 1vw;
+  align-items: center;
   justify-content: space-between;
   width: 90%;
-  /* border: solid 1px blue; */
 }
 
 .logo {
@@ -24,15 +28,37 @@
   padding: 8px 15px;
   border-radius: 5px;
   text-align: center;
+  margin: 0 1vw;
 }
 
 .navBar {
-  display: inline;
+  display: flex;
   color: black;
-  text-align: center;
+  align-items: center;
 }
 
 .navBar > a {
   padding: 1vh 1vw;
   text-decoration: none;
+  font-size: 1.7vh;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: #26bdeb;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: #26bdeb;
+}
+
+.themeToggle {
+  margin: 0 1vw;
 }

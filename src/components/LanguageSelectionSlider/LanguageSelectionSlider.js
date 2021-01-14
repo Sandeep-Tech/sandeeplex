@@ -4,17 +4,17 @@ import style from "./LanguageSelectionSlider.module.css";
 
 const LanguageSelectionSlider = (props) => {
   const languageElements = props.languages.map((language, index) => (
-    <img src={language} alt={`lang ${index}`} />
+    <img className={style.image} src={language} alt={`lang ${index}`} />
   ));
 
   return (
-    <div>
-      <span>LANGUAGES</span>
+    <div className={style.mainContainer}>
+      <span className={style.heading}>LANGUAGES</span>
       <ContentSlider
-        width={100}
-        height={40}
-        totalSlides={props.languages.length}
-        visibleSlides={props.languages.length}
+        width={2}
+        height={2}
+        totalSlides={props.totalSlides}
+        visibleSlides={props.visibleSlides}
         contents={languageElements}
       />
     </div>

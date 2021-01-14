@@ -1,0 +1,12 @@
+.image {
+  border-radius: 100%;
+  height: 10vh;
+}
+.heading {
+  color: #04396b;
+  font-weight: 500;
+}
+
+.mainContainer{
+  padding: 0 2vw;
+}

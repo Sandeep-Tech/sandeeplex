@@ -1,0 +1,66 @@
+.mainContainer {
+  padding: 1vh 2vw;
+  /* background: chartreuse; */
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2vh;
+}
+
+.navBar > a {
+  color: rgb(102, 102, 102);
+  margin: 1vh 1vw;
+}
+
+.platformIconContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.iconRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.marginBelow {
+  margin: 1vh;
+}
+
+/* dummy data styles */
+.availablePlatform {
+  background: pink;
+  width: 3vw;
+  height: 3vh;
+  margin: 0 1vw;
+}
+
+.connectPlatform {
+  background: pink;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 0 1vw;
+}
+
+/* bottom section */
+
+.bottomSection {
+  border-top: 1px solid rgb(102, 102, 102);
+  padding: 2vh 2vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  height: 5vh;
+}

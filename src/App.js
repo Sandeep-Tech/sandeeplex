@@ -41,6 +41,8 @@ for (let i = 0; i < 5; i++)
     <img src={LandscapePlaceholder} alt={`img ${i}`} />
   );
 
+console.log(LandscapePlaceholderArray);
+
 function App() {
   return (
     <div className="App">
@@ -66,7 +68,11 @@ function App() {
 
       <BillBoard imgSrc={BillBoardImageSource} />
 
-      <LanguageSelectionSlider languages={languages} />
+      <LanguageSelectionSlider
+        languages={languages}
+        totalSlides={languages.length}
+        visibleSlides={languages.length}
+      />
 
       <GenreSlider />
 

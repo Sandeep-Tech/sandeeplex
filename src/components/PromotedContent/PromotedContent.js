@@ -26,9 +26,11 @@ const images = [img1, img2, img3, img4, img5, img6];
 const PromotedContent = () => (
   <div>
     <CarouselProvider
+      isPlaying={true}
+      interval={5000}
       infinite={true}
       naturalSlideWidth={100}
-      naturalSlideHeight={25}
+      naturalSlideHeight={35}
       totalSlides={6}
     >
       <Slider>
