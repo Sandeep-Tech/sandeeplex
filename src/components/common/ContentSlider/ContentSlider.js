@@ -20,15 +20,9 @@ const ContentSlider = (props) => (
       visibleSlides={props.visibleSlides}
     >
       <Slider>
-        {props.contents.map((content, index) => {
-          return (
-            <Slide className={style.contentTile}>
-              {
-                content
-              }
-            </Slide>
-          );
-        })}
+        {props.contents.map((content, index) => (
+          <Slide key={index} className={style.contentTile}>{content}</Slide>
+        ))}
       </Slider>
 
       <ButtonBack>Back</ButtonBack>

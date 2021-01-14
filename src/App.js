@@ -9,6 +9,7 @@ import PromotedContent from "./components/PromotedContent/PromotedContent";
 import ContentWall from "./components/ContentWall/ContentWall";
 import ContentSection from "./components/common/ContentSection/ContentSection";
 import BillBoard from "./components/common/BillBoard/BillBoard";
+import LanguageSelectionSlider from "./components/LanguageSelectionSlider/LanguageSelectionSlider";
 
 // Assets
 // import LandscapePlaceholder from "./assets/generic/landscape-block.png";
@@ -16,7 +17,8 @@ import LandscapePlaceholder from "./assets/content-wall/1.jpg";
 import BillBoardImageSource from "./assets/billboard/gemplex-billboard.jpg";
 
 // DUMMY DATA CREATION
-
+// data for LANGUAGES section
+import { languages } from "./data/languages";
 // ORIGINALS - horizontal content section dummy data creation.
 const originalsContentSectionSubHeadings = [
   "Series",
@@ -33,7 +35,9 @@ const moviesContentSectionSubHeadings = ["Original Web Film", "Premium Shorts"];
 // common to ORIGINALS and MOVIES
 const LandscapePlaceholderArray = [];
 for (let i = 0; i < 5; i++)
-  LandscapePlaceholderArray.push(<img src={LandscapePlaceholder} />);
+  LandscapePlaceholderArray.push(
+    <img src={LandscapePlaceholder} alt={`img ${i}`} />
+  );
 
 function App() {
   return (
@@ -59,6 +63,8 @@ function App() {
       />
 
       <BillBoard imgSrc={BillBoardImageSource} />
+
+      <LanguageSelectionSlider languages={languages} />
     </div>
   );
 }

@@ -34,7 +34,7 @@ const PromotedContent = () => (
       <Slider>
         {images.map((image, index) => {
           return (
-            <Slide index={index}>
+            <Slide key={index}>
               <Image alt={`image ${index + 1}`} src={image} />
             </Slide>
           );

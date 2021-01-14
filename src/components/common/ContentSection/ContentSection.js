@@ -8,7 +8,7 @@ const ContentSection = (props) => (
 
     <div>
       {props.subheadings.map((subheading, index) => (
-        <div>
+        <div key={index}>
           <span>{subheading}</span>
           <ContentSlider
             contents={props.images}
