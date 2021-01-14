@@ -11,7 +11,7 @@
   padding: 1vh 1vw;
   justify-content: space-between;
   width: 90%;
-  border: solid 1px blue;
+  /* border: solid 1px blue; */
 }
 
 .logo {
@@ -29,4 +29,10 @@
 .navBar {
   display: inline;
   color: black;
+  text-align: center;
+}
+
+.navBar > a {
+  padding: 1vh 1vw;
+  text-decoration: none;
 }
