@@ -10,6 +10,7 @@ import ContentWall from "./components/ContentWall/ContentWall";
 import ContentSection from "./components/common/ContentSection/ContentSection";
 import BillBoard from "./components/common/BillBoard/BillBoard";
 import LanguageSelectionSlider from "./components/LanguageSelectionSlider/LanguageSelectionSlider";
+import GenreSlider from "./components/GenreSlider/GenreSlider";
 
 // Assets
 // import LandscapePlaceholder from "./assets/generic/landscape-block.png";
@@ -65,6 +66,8 @@ function App() {
       <BillBoard imgSrc={BillBoardImageSource} />
 
       <LanguageSelectionSlider languages={languages} />
+
+      <GenreSlider />
     </div>
   );
 }
