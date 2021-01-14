@@ -1,3 +1,32 @@
-.header {
-  background: pink;
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  /* border: 2px red solid; */
+  height: 6vh;
+  width: 100%;
+}
+
+.centerAllItems {
+  display: flex;
+  padding: 1vh 1vw;
+  justify-content: space-between;
+  width: 90%;
+  border: solid 1px blue;
+}
+
+.logo {
+  height: 4vh;
+}
+
+.loginButton {
+  color: #26bdeb;
+  border: solid 1px #26bdeb;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.navBar {
+  display: inline;
+  color: black;
 }

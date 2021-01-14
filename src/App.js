@@ -11,6 +11,7 @@ import ContentSection from "./components/common/ContentSection/ContentSection";
 import BillBoard from "./components/common/BillBoard/BillBoard";
 import LanguageSelectionSlider from "./components/LanguageSelectionSlider/LanguageSelectionSlider";
 import GenreSlider from "./components/GenreSlider/GenreSlider";
+import Footer from "./components/Footer/Footer";
 
 // Assets
 // import LandscapePlaceholder from "./assets/generic/landscape-block.png";
@@ -68,6 +69,8 @@ function App() {
       <LanguageSelectionSlider languages={languages} />
 
       <GenreSlider />
+
+      <Footer />
     </div>
   );
 }

@@ -1,26 +1,28 @@
 import React from "react";
 import style from "./Header.module.css";
+import logo from "../../assets/logo/gemeplex_logo_black.png";
 
 const Header = () => (
-  <div className={style.header}>
-    {/*logo*/}
-    <span>Sandeeplex</span>
+  <div className={style.headerContainer}>
+    <div className={style.centerAllItems}>
+      <div>
+        <img alt="logo" src={logo} className={style.logo} />
+        <nav className={style.navBar}>
+          <a href="">Originals</a>
+          <a href="">Movies</a>
+          <a href="">Videos</a>
+          <a href="">Music</a>
+          <a href="">Hype</a>
+        </nav>
+      </div>
 
-    {/*content type list*/}
-    <div>
-      <a href="">Originals</a>
-      <a href="">Movies</a>
-      <a href="">Videos</a>
-      <a href="">Music</a>
-      <a href="">Hype</a>
-      <input type="text" />
+      <div>
+        <input type="text" />
+        <button> light or dark</button>
+
+        <span className={style.loginButton}>Login</span>
+      </div>
     </div>
-
-    {/*theme selector*/}
-    <div> light or dark</div>
-
-    {/*login-button(a span tag really)*/}
-    <span>Login</span>
   </div>
 );
 
